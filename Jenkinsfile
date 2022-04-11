@@ -3,7 +3,7 @@ pipeline
     agent any
 	
     environment {
-        env_dev = "DEV"
+        env_dev = 'DEV'
     }
 	
     stages{
