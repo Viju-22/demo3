@@ -21,8 +21,12 @@ pipeline
         }
        
         stage('Deploy Application To Mulesoft '){
-        steps{
 		
+	when {
+                branch 'dev'
+            }
+		
+        steps{	
         bat 'mvn package deploy -DmuleDeploy -Danypoint.userName=OssomVictory4 -Danypoint.password=Capg@1999 -Denvironment=${env_dev}'
         
         }
