@@ -1,6 +1,11 @@
 pipeline
 {
     agent any
+	
+    environment {
+        env_dev = "DEV"
+    }
+	
     stages{
         stage('Build Application'){
         steps{
@@ -18,7 +23,7 @@ pipeline
         stage('Deploy Application To Mulesoft '){
         steps{
 		
-        bat 'mvn package deploy -DmuleDeploy -Danypoint.userName=OssomVictory4 -Danypoint.password=Capg@1999'
+        bat 'mvn package deploy -DmuleDeploy -Danypoint.userName=OssomVictory4 -Danypoint.password=Capg@1999 -Denvironment=${env_dev}'
         
         }
         }
