@@ -41,7 +41,7 @@
 						<username>${anypoint.userName}</username>
 						<password>${anypoint.password}</password>
 						<applicationName>EDeploy1</applicationName>
-						<environment>DEV</environment>
+						<environment>${environment}</environment>
 						<businessGroup>MuleSoft</businessGroup>
 						<workers>1</workers>
 						<workerType>Micro</workerType>
