@@ -29,7 +29,7 @@ pipeline
             }
 		
         steps{	
-        bat 'mvn package deploy -DmuleDeploy -Danypoint.userName=OssomVictory4 -Danypoint.password=Capg@1999 -Danypoint.platform.client_id=5f1c4f12e71146c1a68630eed3d2af01 -Danypoint.platform.client_secret=443B0A935Ca7428aa6d137E02FF78e56 -Denvironment=DEV'
+        bat 'mvn package deploy -DmuleDeploy -Danypoint.userName=OssomVictory5 -Danypoint.password=Capg@1999 -Danypoint.platform.client_id=5f1c4f12e71146c1a68630eed3d2af01 -Danypoint.platform.client_secret=443B0A935Ca7428aa6d137E02FF78e56 -Denvironment=DEV'
         
         }
         }
